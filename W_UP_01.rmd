@@ -45,11 +45,17 @@ $H_A$: The average number of pushups done by line players is statistically diffe
 boxplot(pushups~position,data=mydata)
 ```
 
-The skilled players do more pushups than the linemen. The skilled players also have greater variety in the amount of pushups done than the linemen. The mean amount of pushups done by the linemen is ~15, while the mean done by the skilled players is ~50.
+The skilled players do more pushups than the linemen. The skilled players also have greater variety in the amount of pushups done than the line players. The mean amount of pushups done by the line players is ~15, while the mean done by the skilled players is ~50.
 
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+
+```{r}
+favstats(pushups~position,data=mydata)
+```
+The skilled players, on average, do ~3 times the amount of pushups that the line players do. The ratio of the minimum amount done by the line players to the skilled players is exactly 1:3, and the mean done by the skilled players is above the maximum done by the line players.
 
 ## Inferential Results
 
